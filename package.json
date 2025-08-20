@@ -4,7 +4,9 @@
   "description": "Minecraft bot for AppleMC",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "heroku-prebuild": "npm cache clean --force",
+    "heroku-postbuild": "npm install"
   },
   "dependencies": {
     "mineflayer": "^4.20.0",
